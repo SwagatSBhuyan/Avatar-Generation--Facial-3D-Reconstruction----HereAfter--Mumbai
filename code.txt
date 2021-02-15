@@ -1,0 +1,6 @@
+blender --background --python trump.py
+
+bpy.ops.wm.collada_export()
+
+
+python convert.py --input trump.obj --output trumpPLY.ply

@@ -21,7 +21,18 @@ def generateOBJ(filename):
     abel.pack()
     os.system(cmd)
     os.system("python main.py")
-    cmd2 = '"' + str(os.getcwd()) + "\\output\\" + str(img) + "._mesh.obj" '"'
+    # cmd2 = '"' + str(os.getcwd()) + "\\output\\" + str(img) + "._mesh.obj" '"'
+    # os.system(cmd2)
+    cmd33 = "python convert.py --input " + '"' + "output/" + str(img) + "._mesh.obj" + '"' + " --output " + '"' + "ply_output/" + str(img) + "PLY.ply" + '"'
+    print(cmd33)
+    os.system(cmd33)
+
+    f = open("img.txt", "w")
+    f.write(str(img))
+    f.close()
+
+    os.system('blender --background --python blend.py')
+    cmd2 = '"' + str(os.getcwd()) + "\\final_output\\" + str(img) + "_final.ply" '"'
     os.system(cmd2)
     # abel1 = tk.Label(root, bg = 'green', fg = 'red', text = cmd2)
     # abel1.pack()
