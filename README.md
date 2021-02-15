@@ -29,6 +29,12 @@ Project uses below python packages:
 
 - __tf mesh renderer__ : We use the library to render reconstruction images. Install the library via pip install mesh_renderer. Or you can follow the instruction of tf mesh render to install it using Bazel. Note that current rendering tool does not support tensorflow version higher than 1.13 and can only be used on Linux.
 
+- __BLENDER__ : Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D printed models, motion graphics, interactive 3D applications, virtual reality, and computer games.
+>NOTE: Both the Blender environment Software and the pip Blender Package Module will be required for functioning of the rendered 3d face reconstructions.
+```
+pip install blender
+```
+
 
 ## Server Installation
 
@@ -77,5 +83,6 @@ Please cite the following paper if this model helps your research:
 ## References
 1. @microsoft/Deep3DFaceReconstruction Deep 3D face Reconstruction [GitHub](https://github.com/microsoft/Deep3DFaceReconstruction)
 2. @raviranjan0309/Detect-Facial-Features Detect Facial Features [GitHub](https://github.com/raviranjan0309/Detect-Facial-Features)
+2. @nabeel3133/file-converter-.obj-to-.ply [GitHub](https://github.com/nabeel3133/file-converter-.obj-to-.ply)
 
 
