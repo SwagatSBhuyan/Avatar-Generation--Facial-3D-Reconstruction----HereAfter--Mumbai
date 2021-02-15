@@ -1,6 +1,6 @@
 # Facial-Feature-Detection-and-3D-Reconstruction-with-Texture-Generation
 
-This repository has been built to detect facial features using the standard 68 landmark data file and will hance generate a 5 landmark coordinate system that will eventually be used by the 3D reconstruction scripts to generate an object file with built-in vector textures.
+This repository has been built to detect facial features using the standard 68 landmark data file and will hance generate a 5 landmark coordinate system that will eventually be used by the 3D reconstruction scripts to generate an object file (.ply) with built-in vector colors.
 
 The Avatar Generation SDK was built internally, through various reconstruction and face detection repositories already available in Github, under fair use policies and guidelines. Many files, such as various morph files, the network folder present in the directory, and BFM files for texture generation are protected under copyright guidelines, and hence must be looked upon carefully before use. Otherwise, Citations have been provided by our personal github repository to replicate the final Avatar generation SDK repository. All the relevant links are provided in this documentation.
 
@@ -66,7 +66,7 @@ The given setup.exe or setup.py files have been built with options to download a
 ```
 python ./main_pipeline.py
 ```
-8. Check the ./output folder to acquire the generated .obj files with built-in vector textures, that can be rendered using softwares, such as meshlab.
+8. Check the ./final_output folder to acquire the generated .ply files with built-in vector textures, that can be rendered using softwares, such as meshlab.
 
 
 ## Citation
