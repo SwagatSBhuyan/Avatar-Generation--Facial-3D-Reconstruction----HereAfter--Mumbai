@@ -32,8 +32,13 @@ def generateOBJ(filename):
     f.close()
 
     os.system('blender --background --python blend.py')
-    cmd2 = '"' + str(os.getcwd()) + "\\final_output\\" + str(img) + "_final.ply" '"'
-    os.system(cmd2)
+
+    #display ply: 
+    #cmd2 = '"' + str(os.getcwd()) + "\\final_output\\" + str(img) + "_final.ply" '"'
+    #os.system(cmd2)
+
+    os.system('python runGeneration.py')
+
     # abel1 = tk.Label(root, bg = 'green', fg = 'red', text = cmd2)
     # abel1.pack()
 
