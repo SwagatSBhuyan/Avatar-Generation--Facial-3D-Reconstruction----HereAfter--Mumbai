@@ -30,7 +30,6 @@ bpy.ops.transform.resize(value=(0.896985, 0.896985, 0.896985), orient_type='GLOB
 
 
 
-
 file_loc_out = str(current_directory) + '\\final_output\\' + str(filer) + '_final.ply'
 bpy.ops.export_mesh.ply(filepath=file_loc_out)
 
